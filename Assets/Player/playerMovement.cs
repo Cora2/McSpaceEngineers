@@ -6,7 +6,7 @@ public class playerMovement : MonoBehaviour
 {
 
     public float walkSpeed = 10f;
-    public float jetpackSpeed = 75;
+    public float jetpackSpeed = 75f;
     public bool jetpack = false;
 
     // Update is called once per frame
@@ -16,18 +16,22 @@ public class playerMovement : MonoBehaviour
         {
             Debug.Log("Jetpack On");
             jetpack = true;
+            Vector3 stopmove = new Vector3(0, 0, 0);
+            transform.position += stopmove;
         }
         else if (Input.GetKeyDown("j"))
         {
             Debug.Log("Jetpack Off");
             jetpack = false;
+            Vector3 stopmove = new Vector3(0, 0, 0);
+            transform.position += stopmove;
         }
 
         if (jetpack == false)
         {
             this.GetComponent<Rigidbody2D>().gravityScale = 1;
-            Vector3 move = new Vector3(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"), 0);
-            transform.position += move * walkSpeed * Time.deltaTime;
+            Vector3 jetpackmove = new Vector3(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"), 0);
+            transform.position += jetpackmove * walkSpeed * Time.deltaTime;
         }
         else {
             this.GetComponent<Rigidbody2D>().gravityScale = 0;
@@ -43,7 +47,7 @@ public class playerMovement : MonoBehaviour
 
             }
             Vector3 move = new Vector3(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"), 0);
-            transform.position += move * walkSpeed * Time.deltaTime;
+            transform.position += move * jetpackSpeed * Time.deltaTime;
         }
     }
 }
