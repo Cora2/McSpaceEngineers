@@ -35,24 +35,9 @@
     <ImplicitlyExpandNETStandardFacades>false</ImplicitlyExpandNETStandardFacades>
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
-<<<<<<< HEAD
-=======
-  <PropertyGroup>
-    <ProjectTypeGuids>{E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
-    <UnityProjectGenerator>Package</UnityProjectGenerator>
-    <UnityProjectGeneratorVersion>2.0.11</UnityProjectGeneratorVersion>
-    <UnityProjectType>Game:1</UnityProjectType>
-    <UnityBuildTarget>StandaloneOSX:2</UnityBuildTarget>
-    <UnityVersion>2020.3.19f1</UnityVersion>
-  </PropertyGroup>
-  <ItemGroup>
-    <Compile Include="Assets/User Interface/gravityIndicator.cs" />
-    <Compile Include="Assets/Player/playerMovement.cs" />
-    <Compile Include="Assets/User Interface/hudLoader.cs" />
-  </ItemGroup>
->>>>>>> 34395b589c092b8a4fa5f447352850b95dc77191
   <ItemGroup>
      <Compile Include="Assets\User Interface\gravityIndicator.cs" />
+     <Compile Include="Assets\User Interface\hudLoader.cs" />
      <Compile Include="Assets\Player\playerMovement.cs" />
     <Reference Include="UnityEngine">
         <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.19f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
