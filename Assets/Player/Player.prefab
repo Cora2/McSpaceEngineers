@@ -48,6 +48,8 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -97,7 +99,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   walkSpeed: 10
   jetpackSpeed: 75
-  jetpack: 0
+  jetpack: 1
 --- !u!50 &3627364130191943527
 Rigidbody2D:
   serializedVersion: 4

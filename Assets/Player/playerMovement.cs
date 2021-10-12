@@ -9,12 +9,6 @@ public class playerMovement : MonoBehaviour
     public float jetpackSpeed = 75;
     public bool jetpack = false;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
     // Update is called once per frame
     void Update()
     {
@@ -36,6 +30,17 @@ public class playerMovement : MonoBehaviour
         }
         else {
             this.GetComponent<Rigidbody2D>().gravityScale = 0;
+            if (Input.GetKey("q"))
+            {
+                Debug.Log("Rotate Left");
+                transform.Rotate(new Vector3(0f, 0f, 0.1f));
+            }
+            else if (Input.GetKey("e"))
+            {
+                Debug.Log("Rotate Left");
+                transform.Rotate(new Vector3(0f, 0f, -0.1f));
+
+            }
             Vector3 move = new Vector3(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"), 0);
             transform.position += move * walkSpeed * Time.deltaTime;
         }
