@@ -54,6 +54,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Assets/Player/playerMovement.cs" />
+    <Compile Include="Assets/User Interface/gravityIndicator.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
