@@ -22,6 +22,7 @@ public class playerMovement : MonoBehaviour
             Debug.Log("Jetpack Off");
             jetpack = false;
         }
+
         if (jetpack == false)
         {
             this.GetComponent<Rigidbody2D>().gravityScale = 1;
