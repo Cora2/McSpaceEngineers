@@ -18,36 +18,37 @@ public class playerMovement : MonoBehaviour
             jetpack = true;
             Vector3 stopmove = new Vector3(0, 0, 0);
             transform.position += stopmove;
+            this.GetComponent<Rigidbody2D>().gravityScale = 1;
         }
         else if (Input.GetKeyDown("j"))
         {
+            this.GetComponent<Rigidbody2D>().gravityScale = 0;
             Debug.Log("Jetpack Off");
             jetpack = false;
             Vector3 stopmove = new Vector3(0, 0, 0);
             transform.position += stopmove;
         }
-
-        if (jetpack == false)
-        {
-            this.GetComponent<Rigidbody2D>().gravityScale = 1;
-            Vector3 jetpackmove = new Vector3(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"), 0);
-            transform.position += jetpackmove * walkSpeed * Time.deltaTime;
-        }
         else {
-            this.GetComponent<Rigidbody2D>().gravityScale = 0;
-            if (Input.GetKey("q"))
+            if (jetpack == false)
             {
-                Debug.Log("Rotate Left");
-                transform.Rotate(new Vector3(0f, 0f, 0.1f));
+                Vector3 jetpackmove = new Vector3(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"), 0);
+                transform.position += jetpackmove * walkSpeed * Time.deltaTime;
             }
-            else if (Input.GetKey("e"))
-            {
-                Debug.Log("Rotate Left");
-                transform.Rotate(new Vector3(0f, 0f, -0.1f));
+            else {
+                if (Input.GetKey("q"))
+                {
+                    Debug.Log("Rotate Left");
+                    transform.Rotate(new Vector3(0f, 0f, 0.2f));
+                }
+                else if (Input.GetKey("e"))
+                {
+                    Debug.Log("Rotate Left");
+                    transform.Rotate(new Vector3(0f, 0f, -0.2f));
 
+                }
+                Vector3 move = new Vector3(Input.GetAxis("Hoizontal"), Input.GetAxis("Vertical"), 0);
+                transform.position += move * jetpackSpeed * Time.deltaTime;
             }
-            Vector3 move = new Vector3(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"), 0);
-            transform.position += move * jetpackSpeed * Time.deltaTime;
         }
     }
 }
