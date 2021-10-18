@@ -28,36 +28,24 @@ public class playerMovement : MonoBehaviour
         else {
             if (jetpack == false)
             {
+                //Jetpack off 
                 this.GetComponent<Rigidbody2D>().gravityScale = 1;
                 if (Input.GetAxis("Horizontal") != 0 || Input.GetAxis("Vertical") != 0) {
                     Vector3 jetpackmove = new Vector3(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"), 0);
                     transform.position += jetpackmove * jetpackSpeed * Time.deltaTime;
                 }
-                else {
-                    Vector3 stopmove = new Vector3(0, 0, 0);
-                    transform.position += stopmove;
-                }
             }
             else {
+                //Jetpack on
                 this.GetComponent<Rigidbody2D>().gravityScale = 0;
-                if (Input.GetKey("q"))
-                {
-                    Debug.Log("Rotate Left");
-                    transform.Rotate(new Vector3(0f, 0f, 0.1f));
-                }
-                else if (Input.GetKey("e"))
-                {
-                    Debug.Log("Rotate Left");
-                    transform.Rotate(new Vector3(0f, 0f, -0.1f));
-                }
-                if (Input.GetAxis("Horizontal") != 0 || Input.GetAxis("Vertical") != 0) {
-                    Vector3 walkmove = new Vector3(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"), 0);
-                    transform.position += walkmove * walkSpeed * Time.deltaTime;
-                }
-                else {
-                    Vector3 stopmove = new Vector3(0, 0, 0);
-                    transform.position += stopmove;
-                }
+                if (Input.GetKey("q")){transform.Rotate(new Vector3(0f, 0f, 0.3f));}
+                else if (Input.GetKey("e")){transform.Rotate(new Vector3(0f, 0f, -0.3f));}
+
+                if (Input.GetAxis("Horizontal") > 0){this.GetComponent<Rigidbody2D>().velocity = transform.right * jetpackSpeed;}
+                else if ((Input.GetAxis("Horizontal") < 0)){this.GetComponent<Rigidbody2D>().velocity = -transform.right * jetpackSpeed;}
+
+                if (Input.GetAxis("Vertical") > 0) {this.GetComponent<Rigidbody2D>().velocity = transform.up * jetpackSpeed;}
+                else if (Input.GetAxis("Vertical") < 0) {this.GetComponent<Rigidbody2D>().velocity = -transform.up * jetpackSpeed;}
             }
         }
     }

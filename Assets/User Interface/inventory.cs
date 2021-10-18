@@ -6,6 +6,7 @@ public class inventory : MonoBehaviour
 {
     public GameObject Inventoryobj;
     public bool hand = true;
+
     public void leftHand() {
         Debug.Log("Left Hand Selected");
         hand = true; 

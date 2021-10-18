@@ -133,7 +133,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   walkSpeed: 10
-  jetpackSpeed: 50
+  jetpackSpeed: 5
   jetpack: 0
 --- !u!50 &6187136870784769034
 Rigidbody2D:
@@ -148,8 +148,8 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 1
   m_Mass: 3.4110274
-  m_LinearDrag: 1
-  m_AngularDrag: 0.05
+  m_LinearDrag: 2
+  m_AngularDrag: 2
   m_GravityScale: 1
   m_Material: {fileID: 0}
   m_Interpolate: 0
