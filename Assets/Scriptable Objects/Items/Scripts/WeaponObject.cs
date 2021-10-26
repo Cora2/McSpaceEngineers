@@ -7,7 +7,6 @@ public class WeaponObject : ItemObject
 {
     public int BaseProductionTime; // seconds
     public int RateOfFire; // Rounds Per Minute (RPM)
-    public int DamageMultiplier; // Percent
     public float ShotSpread; // Degrees
     public int DamageToPlayer = 24;
     public int DamageToBlocks = 30;
