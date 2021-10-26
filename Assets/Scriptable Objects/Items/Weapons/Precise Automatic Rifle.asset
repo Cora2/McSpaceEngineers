@@ -20,7 +20,6 @@ MonoBehaviour:
   BaseProductionTime: 12
   RateOfFire: 300
   DamageMultiplier: 140
-  RangeMultiplier: 0
   ShotSpread: 0.1
   DamageToPlayer: 24
   DamageToBlocks: 30
