@@ -1,14 +1,11 @@
 ﻿<Properties StartupConfiguration="{226F7364-9F7F-4C3C-56B8-67E26B0635C3}|">
   <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="Unity.Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/User Interface/inventory.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scriptable Objects/Items/Scripts/WeaponObject.cs">
     <Files>
-<<<<<<< HEAD
-      <File FileName="Assets/Player/playerMovement.cs" Line="43" Column="29" />
-      <File FileName="Assets/User Interface/inventory.cs" Line="9" Column="5" />
-=======
-      <File FileName="Assets/User Interface/Inventory_Manager.cs" Line="3" Column="11" />
-      <File FileName="Assets/User Interface/inventory.cs" Line="8" Column="29" />
->>>>>>> b91377f4347ab431c6d249940a6ad7257432e29f
+      <File FileName="Assets/Scriptable Objects/Items/Scripts/ItemObject.cs" Line="20" Column="41" />
+      <File FileName="Assets/Scriptable Objects/Items/Scripts/ToolObject.cs" Line="12" Column="31" />
+      <File FileName="Assets/Scriptable Objects/Items/Scripts/Tools/BottleObject.cs" Line="6" Column="39" />
+      <File FileName="Assets/Scriptable Objects/Items/Scripts/WeaponObject.cs" Line="11" Column="40" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
