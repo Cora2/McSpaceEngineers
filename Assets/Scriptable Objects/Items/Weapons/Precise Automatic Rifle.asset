@@ -17,11 +17,11 @@ MonoBehaviour:
   icon: {fileID: 0}
   Mass: 3
   Volume: 14
-  BaseProductionTime: 0
-  RateOfFire: 0
-  DamageMultiplier: 0
+  BaseProductionTime: 12
+  RateOfFire: 300
+  DamageMultiplier: 140
   RangeMultiplier: 0
-  ShotSpread: 0
+  ShotSpread: 0.1
   DamageToPlayer: 24
   DamageToBlocks: 30
   MagazineSize: 30
