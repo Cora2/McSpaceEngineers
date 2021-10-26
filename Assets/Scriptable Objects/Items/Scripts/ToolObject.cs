@@ -10,6 +10,10 @@ public class ToolObject : ItemObject
     public int SpeedMultiplier; // percent
     public int DamageToPlayer;
     public int DamageToBlocks;
+
+    // work in progress
+    // public var[][];
+
     public void Awake()
     {
         type = ItemType.Tool;
