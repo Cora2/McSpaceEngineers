@@ -10,12 +10,16 @@ public class ToolObject : ItemObject
     public int SpeedMultiplier; // percent
     public int DamageToPlayer;
     public int DamageToBlocks;
-
-    // work in progress
-    // public var[][];
-
+    public MaterialArray[] Materials;
     public void Awake()
     {
         type = ItemType.Tool;
     }
+}
+
+[System.Serializable]
+public class MaterialArray
+{
+    public MaterialObject Material;
+    public float Amount;
 }

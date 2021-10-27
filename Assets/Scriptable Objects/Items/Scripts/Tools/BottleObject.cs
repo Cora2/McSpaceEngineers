@@ -7,6 +7,7 @@ public class BottleObject : ItemObject
 {
     public int BaseProductionTime; // seconds
     public int GasCapacity; // Liters
+    public MaterialArray[] Materials;
     private void Awake()
     {
         type = ItemType.Tool;

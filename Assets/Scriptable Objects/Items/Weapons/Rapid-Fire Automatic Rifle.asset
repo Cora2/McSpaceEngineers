@@ -19,7 +19,6 @@ MonoBehaviour:
   Volume: 14
   BaseProductionTime: 12
   RateOfFire: 1000
-  DamageMultiplier: 70
   ShotSpread: 1
   DamageToPlayer: 24
   DamageToBlocks: 30
@@ -27,3 +26,8 @@ MonoBehaviour:
   MuzzleVelocity: 300
   MaximumRange: 800
   Impulse: 3.2
+  Materials:
+  - Material: {fileID: 11400000, guid: 1e96fc425d4784350a528217d9f3d7f7, type: 2}
+    Amount: 3
+  - Material: {fileID: 11400000, guid: 9890b0da72ff64bfbb8844ec5723c412, type: 2}
+    Amount: 8

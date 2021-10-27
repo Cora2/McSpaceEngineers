@@ -22,3 +22,14 @@ MonoBehaviour:
   SpeedMultiplier: 200
   DamageToPlayer: 20
   DamageToBlocks: 20
+  Materials:
+  - Material: {fileID: 11400000, guid: 1e96fc425d4784350a528217d9f3d7f7, type: 2}
+    Amount: 3
+  - Material: {fileID: 11400000, guid: 9890b0da72ff64bfbb8844ec5723c412, type: 2}
+    Amount: 1
+  - Material: {fileID: 11400000, guid: 1e27601b10c7e49dfa255bcbd8979767, type: 2}
+    Amount: 1
+  - Material: {fileID: 11400000, guid: 209adf93af0f14559897b70501a1ecd4, type: 2}
+    Amount: 2
+  - Material: {fileID: 11400000, guid: 0b4109ac7fa584aeaa7cec7496d7b72a, type: 2}
+    Amount: 2

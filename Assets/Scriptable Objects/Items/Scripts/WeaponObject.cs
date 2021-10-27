@@ -14,6 +14,7 @@ public class WeaponObject : ItemObject
     public int MuzzleVelocity = 300; // meters per second
     public int MaximumRange = 800; // meters
     public float Impulse = 3.2f; // N
+    public MaterialArray[] Materials;
     public void Awake()
     {
         type = ItemType.Tool;

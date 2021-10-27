@@ -53,16 +53,19 @@
     <UnityVersion>2020.3.19f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Assets/Player/playerMovement.cs" />
-    <Compile Include="Assets/User Interface/Inventory_Manager.cs" />
-    <Compile Include="Assets/User Interface/inventory.cs" />
     <Compile Include="Assets/Scriptable Objects/Items/Scripts/ItemObject.cs" />
+    <Compile Include="Assets/Scriptable Objects/Items/Scripts/WeaponObject.cs" />
     <Compile Include="Assets/Scriptable Objects/Items/Scripts/ToolObject.cs" />
     <Compile Include="Assets/Scriptable Objects/Items/Scripts/Tools/GrinderObject.cs" />
     <Compile Include="Assets/Scriptable Objects/Items/Scripts/Tools/HandDrillObject.cs" />
+    <Compile Include="Assets/Scriptable Objects/Items/Scripts/ComponentObject.cs" />
     <Compile Include="Assets/Scriptable Objects/Items/Scripts/Tools/WelderObject.cs" />
-    <Compile Include="Assets/Scriptable Objects/Items/Scripts/WeaponObject.cs" />
+    <Compile Include="Assets/Player/playerMovement.cs" />
     <Compile Include="Assets/Scriptable Objects/Items/Scripts/Tools/BottleObject.cs" />
+    <Compile Include="Assets/User Interface/Inventory_Manager.cs" />
+    <Compile Include="Assets/User Interface/inventory.cs" />
+    <Compile Include="Assets/Scriptable Objects/Items/Scripts/MaterialObject.cs" />
+    <Compile Include="Assets/Scriptable Objects/Items/Scripts/OreObject.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets/TextMesh Pro/Shaders/TMPro.cginc" />

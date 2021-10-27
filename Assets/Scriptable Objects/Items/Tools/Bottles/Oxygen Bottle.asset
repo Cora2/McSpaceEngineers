@@ -19,3 +19,10 @@ MonoBehaviour:
   Volume: 120
   BaseProductionTime: 10
   GasCapacity: 100
+  Materials:
+  - Material: {fileID: 11400000, guid: 9890b0da72ff64bfbb8844ec5723c412, type: 2}
+    Amount: 30
+  - Material: {fileID: 11400000, guid: 209adf93af0f14559897b70501a1ecd4, type: 2}
+    Amount: 10
+  - Material: {fileID: 11400000, guid: 1e96fc425d4784350a528217d9f3d7f7, type: 2}
+    Amount: 80

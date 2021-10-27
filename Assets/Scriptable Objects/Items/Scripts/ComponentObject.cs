@@ -7,6 +7,7 @@ public class ComponentObject : ItemObject
 {
     public int Integrity;
     public int BaseProductionTime; // seconds
+    public Object[][] Materials;
     public void Awake()
     {
         type = ItemType.Component;
